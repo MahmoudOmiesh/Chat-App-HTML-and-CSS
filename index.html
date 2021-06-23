@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<script
+			src="https://kit.fontawesome.com/8dbdbf8886.js"
+			crossorigin="anonymous"
+			defer
+		></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | [Chat App Illustration]</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main class="main-wrapper">
+			<section class="phone">
+				<header class="header">
+					<div class="header__wrapper">
+						<div class="header__content">
+							<i class="fas fa-chevron-left header__icon"></i>
+							<img
+								src="images/avatar.jpg"
+								alt="personal photo of a man"
+								class="header__content-img"
+							/>
+							<div>
+								<h3 class="header__content-name">Samuel Green</h3>
+								<p class="header__content-status">Available to Walk</p>
+							</div>
+						</div>
+						<i class="fas fa-ellipsis-v header__icon"></i>
+					</div>
+				</header>
+				<section class="main">
+					<div class="main__msg recieved">
+						<p class="main__text">That sounds great. I’d be happy with that.</p>
+					</div>
+					<div class="main__msg recieved">
+						<p class="main__text">
+							Could you send over some pictures of your dog, please?.
+						</p>
+					</div>
+					<div class="main__images sent">
+						<img
+							src="images/dog-image-1.jpg"
+							alt="Picture of dog"
+							class="main__img"
+						/><img
+							src="images/dog-image-2.jpg"
+							alt="Picture of dog"
+							class="main__img"
+						/><img
+							src="images/dog-image-3.jpg"
+							alt="Photo of dog"
+							class="main__img"
+						/>
+					</div>
+					<div class="main__msg sent">
+						<p class="main__text">
+							Here are a few pictures. She’s a happy girl
+						</p>
+					</div>
+					<div class="main__msg sent">
+						<p class="main__text">Can you make it?</p>
+					</div>
+					<div class="main__msg recieved">
+						<p class="main__text">
+							She looks so happy! The time we discussed works. How long shall I
+							take her out for?
+						</p>
+					</div>
+					<div class="main__walk recieved">
+						<p class="walk__text">
+							30 minute walk <span class="walk__price">$29</span>
+						</p>
+					</div>
+					<div class="main__walk recieved">
+						<p class="walk__text">
+							1 hour walk <span class="walk__price">$49</span>
+						</p>
+					</div>
+				</section>
+				<footer class="footer">
+					<input
+						type="text"
+						class="footer__send"
+						placeholder="Type a message…"
+					/>
+					<button class="footer__btn">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</footer>
+			</section>
+			<section class="content">
+				<h1 class="content__title">Simple booking</h1>
+				<p class="content__paragraph">
+					Stay in touch with our dog walkers through the chat interface. This
+					makes it easy to discuss arrangements and make bookings. Once the walk
+					has been completed you can rate your walker and book again all through
+					the chat.
+				</p>
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Mahmoud Omiesh</a>.
+		</div>
+	</body>
+</html>

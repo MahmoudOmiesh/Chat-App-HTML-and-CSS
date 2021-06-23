@@ -1,0 +1,39 @@
+$colors: (
+	"primary": (
+		"100": hsl(276, 100%, 81%),
+		//(sub-heading at the top of the app UI)
+		"200": hsl(289, 100%, 72%),
+		//(radio button outline)
+		"300": hsl(276, 55%, 52%),
+		//(chat on the left)
+		"400": hsl(271, 15%, 43%),
+		//(chat on the right)
+		"500": hsl(271, 36%, 24%),
+		//(main heading)
+	),
+	"neutral": (
+		"100": hsl(0, 0%, 100%),
+		//white
+		"200": hsl(270, 20%, 96%),
+		//(app background)
+		"300": hsl(206, 6%, 79%),
+		//(placeholder text)
+		"400": hsl(270, 7%, 64%),
+		//(paragraph)
+	),
+	"gradient": (
+		"1": hsl(293, 100%, 63%),
+		"2": hsl(264, 100%, 61%),
+	),
+);
+
+$font-weights: (
+	"400": 400,
+	"500": 500,
+	"700": 700,
+);
+
+$breakpoints: (
+	"medium": 65em,
+	"large": 90em,
+);

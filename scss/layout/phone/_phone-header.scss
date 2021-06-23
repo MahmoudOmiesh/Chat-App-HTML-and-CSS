@@ -1,0 +1,60 @@
+.header {
+	background-image: linear-gradient(
+		to left,
+		var(--clr-gradient-1),
+		var(--clr-gradient-2)
+	);
+	color: var(--clr-neutral-100);
+	padding: 0 var(--padding) var(--padding) var(--padding);
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	display: grid;
+	grid-template-rows: 0.7fr 1fr;
+
+	@include pseudo(before) {
+		background-color: var(--clr-neutral-100);
+		grid-row: 1 / 2;
+		width: 50%;
+		height: 80%;
+		justify-self: center;
+		@include rounded(0, 0, 1, 1);
+	}
+
+	&__wrapper {
+		grid-row: 2 / 3;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__icon {
+		cursor: pointer;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: var(--padding);
+
+		&-img {
+			width: 15%;
+			border-radius: 50%;
+			border: 2px solid var(--clr-neutral-100);
+			cursor: pointer;
+			transition: transform var(--transition-duration);
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+
+		&-name {
+			font-size: 1.25rem;
+			font-weight: var(--fw-500);
+		}
+
+		&-status {
+			color: var(--clr-primary-100);
+		}
+	}
+}

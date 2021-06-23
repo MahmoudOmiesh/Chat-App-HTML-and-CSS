@@ -1,0 +1,35 @@
+.footer {
+	padding: var(--padding);
+	position: relative;
+
+	&__send {
+		width: 100%;
+		border: 0;
+		padding: var(--padding) calc(var(--padding) * 2);
+		@include rounded(2, 2, 2, 2);
+
+		&::placeholder {
+			color: var(--clr-neutral-300);
+		}
+	}
+
+	&__btn {
+		position: absolute;
+		right: 3.5em;
+		top: 50%;
+		width: 2rem;
+		height: 2rem;
+		transform: translateY(-50%);
+		border: 0;
+		background-color: var(--clr-primary-500);
+		color: var(--clr-neutral-100);
+		border-radius: 50%;
+		cursor: pointer;
+		transition: background-color var(--transition-duration);
+
+		&:focus,
+		&:hover {
+			background-color: var(--clr-primary-300);
+		}
+	}
+}
